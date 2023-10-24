@@ -1,0 +1,94 @@
+@font-face {
+    font-family: CircularStd;
+    src: url(../../assets/font/CircularStd-Book/CircularStd-Book.ttf);
+}
+
+%setBlock {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: auto;
+}
+
+%setText {
+    color: #939393;
+    font-family: CircularStd;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    height: auto;
+    width: auto;
+    margin: 0;
+}
+
+.footer-page {
+    @extend %setBlock;
+    justify-content: space-between;
+    padding: 90px 136px 123px 120px;
+
+    .desc-logo {
+        @extend %setBlock;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 84.56px;
+
+        img {
+            width: auto;
+            height: auto;
+            color: #141416;
+        }
+
+        h5 {
+            @extend %setText;
+        }
+    }
+
+    section {
+        @extend %setBlock;
+        align-items: flex-start;
+
+        article {
+            @extend %setBlock;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 19px;
+    
+            h3 {
+                @extend %setText;
+                color: #3D4F5C;
+                line-height: 18px;
+            }
+    
+            div {
+                @extend %setBlock;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 11px;
+    
+                p {
+                    @extend %setText;
+                    color: #939393;
+                    line-height: 24px;
+                    width: 328px;
+                }
+    
+                a {
+                    text-decoration: none;
+    
+                    h5 {
+                        @extend %setText;
+                        color: var(--complementary-green);
+                        line-height: 35px;
+                    }
+    
+                    .icon-link {
+                        width: 23px;
+                        height: 23px;
+                        color: var(--complementary-green);
+                    }
+                }
+            }
+        }
+    }
+}

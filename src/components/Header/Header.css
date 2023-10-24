@@ -1,0 +1,76 @@
+@font-face {
+  font-family: CircularStd;
+  src: url(../../assets/font/CircularStd-Book/CircularStd-Book.ttf);
+}
+.header-page .header-body button h5, .header-page .header-body p, .header-page .header-body h1 {
+  color: #3D4F5C;
+  font-family: CircularStd;
+  font-size: 85px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 85px;
+  letter-spacing: -1.7px;
+  height: auto;
+  width: auto;
+  margin: 0;
+}
+
+.header-page .header-body button, .header-page .header-body, .header-page .header-nav, .header-page {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+
+.header-page {
+  position: relative;
+  flex-direction: column;
+  padding: 30px 120px 225px;
+  gap: 145px;
+}
+.header-page .header-nav {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: none;
+}
+.header-page .header-nav img {
+  position: static;
+  align-self: center;
+  width: auto;
+  height: auto;
+  color: #141416;
+  cursor: pointer;
+}
+.header-page .header-body {
+  flex-direction: column;
+  gap: 25px;
+}
+.header-page .header-body p {
+  color: var(--primary-orange);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.24px;
+}
+.header-page .header-body button {
+  align-items: center;
+  padding: 13px 20px 14px;
+  border-radius: 32.5px;
+  width: 157px;
+  background: var(--complementary-green);
+  cursor: pointer;
+  border: none;
+}
+.header-page .header-body button h5 {
+  color: #FFF;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.18px;
+}
+.header-page img {
+  position: absolute;
+  width: 704.816px;
+  height: 507px;
+  bottom: 0;
+  right: 0;
+}/*# sourceMappingURL=Header.css.map */

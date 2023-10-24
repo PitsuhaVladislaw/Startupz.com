@@ -1,0 +1,46 @@
+@font-face {
+  font-family: CircularStd;
+  src: url(../../assets/font/CircularStd-Book/CircularStd-Book.ttf);
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+}
+
+.navbar button p, .navbar h3 {
+  color: #3D4F5C;
+  font-family: CircularStd;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.18px;
+  height: auto;
+  width: auto;
+  margin: 0;
+}
+
+.navbar {
+  gap: 40px;
+}
+.navbar h3 {
+  cursor: pointer;
+}
+.navbar button {
+  padding: 15px 35px 16px 34px;
+  border: 1px solid var(--complementary-green);
+  border-radius: 32.5px;
+  background: none;
+  margin-left: 2px;
+  cursor: pointer;
+}
+.navbar button p {
+  color: var(--complementary-green);
+  text-align: center;
+  font-weight: 700;
+  line-height: 100%;
+  margin: 0;
+}/*# sourceMappingURL=NavBar.css.map */

@@ -1,0 +1,8 @@
+* {
+    outline: 1px solid red;
+}
+
+:root {
+    --complementary-green: #46B8C8;
+    --primary-orange: #FB8958;
+}

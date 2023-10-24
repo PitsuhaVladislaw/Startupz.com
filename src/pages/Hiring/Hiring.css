@@ -1,0 +1,67 @@
+@font-face {
+  font-family: CircularStd;
+  src: url(../../assets/font/CircularStd-Book/CircularStd-Book.ttf);
+}
+.hiring button, .hiring {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+}
+
+.hiring button h5, .hiring p, .hiring h2 {
+  color: #3D4F5C;
+  text-align: center;
+  font-family: CircularStd;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: -1px;
+  height: auto;
+  width: auto;
+  margin: 0;
+}
+
+.hiring {
+  position: relative;
+  flex-direction: column;
+  padding-top: 140px;
+  padding-bottom: 165px;
+  gap: 30px;
+}
+.hiring p {
+  color: var(--primary-orange);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.24px;
+}
+.hiring button {
+  border-radius: 32.5px;
+  padding: 13px 5.25px 14px 3.94px;
+  background: var(--complementary-green);
+  cursor: pointer;
+  border: none;
+}
+.hiring button h5 {
+  color: #FFF;
+  font-size: 18px;
+  line-height: 18px;
+  width: 233.805px;
+}
+.hiring .rightpic {
+  position: absolute;
+  height: auto;
+  width: auto;
+  right: 0;
+  top: 100px;
+}
+.hiring .leftpic {
+  position: absolute;
+  height: auto;
+  width: auto;
+  left: 0;
+  top: 100px;
+}/*# sourceMappingURL=Hiring.css.map */
