@@ -1,0 +1,46 @@
+.assistant {
+    position: fixed;
+    bottom: 111.11px;
+    right: 126px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 100;
+
+    .bot {
+        height: auto;
+        width: auto;
+        border-radius: 112.813px;
+        border: 9px solid #FFF;
+        background: #FFF;
+        cursor: pointer;
+
+        .bot-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 96px;
+            height: 95px;
+            border-radius: 95px;
+            background: #F5F5F5;
+
+            .bot-icon {
+                position: relative;
+
+                img {
+                    height: auto;
+                    width: auto;
+                }
+
+                .blc {
+                    position: absolute;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    .bot:hover {
+        border-color: #3D4F5C;
+    }
+}

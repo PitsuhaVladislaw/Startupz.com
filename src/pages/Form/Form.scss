@@ -1,0 +1,134 @@
+@font-face {
+    font-family: CircularStd;
+    src: url(../../assets/font/CircularStd-Book/CircularStd-Book.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../assets//font/Roboto/Roboto-Black.ttf);
+}
+
+%setBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+
+%setText {
+    color: #939393;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    height: auto;
+    width: auto;
+    margin: 0;
+}
+
+.form-sect {
+    background: var(--secondary-yellow);
+    padding: 60px 124px 70px;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    @extend %setBlock;
+    gap: 34px;
+
+    h1 {
+        @extend %setText;
+        color: #FFF;
+        font-family: CircularStd;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 55px;
+        letter-spacing: -1.2px;
+    }
+
+    p {
+        @extend %setText;
+        color: #FFF;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.24px;
+    }
+
+    form {
+        box-shadow: 0px 8px 35px 0px rgba(187, 169, 142, 0.15);
+        padding: 72px 42px 40px 41px; 
+        flex-direction: column;
+        background: #F3F3F3;
+        border-radius: 10px;
+        @extend %setBlock;
+        gap: 16px;
+
+        input {
+            box-shadow: 0px 8px 35px 0px rgba(187, 169, 142, 0.15);
+            border-radius: 10px;
+            background: #FFF;
+            padding: 0 16px;
+            @extend %setText;
+            color: #000000;
+            cursor: pointer;
+            width: 429px;
+            height: 54px;
+            border: none;
+        }
+
+        input::placeholder {
+            @extend %setText;
+            text-align: left;
+            margin: 0;
+        }
+
+        textarea {
+            box-shadow: 0px 8px 35px 0px rgba(187, 169, 142, 0.15);
+            border-radius: 10px;
+            background: #FFF;
+            padding: 18px 16px;
+            @extend %setText;
+            color: #000000;
+            cursor: pointer;
+            height: 270px;
+            max-width: 429px;
+            min-width: 429px;
+            border: none;
+        }
+
+        textarea::placeholder {
+            @extend %setText;
+            text-align: left;
+        }
+
+        button {
+            padding: 13px 39.93px 14px 39.07px;
+            border: 1px solid #3D4F5C;
+            border-radius: 32.5px;
+            background: #3D4F5C;
+            @extend %setBlock;
+            cursor: pointer;
+            margin-top: 18px;
+
+            h6 {
+                @extend %setText;
+                color: #FBFBFA;
+                text-align: center;
+                font-family: CircularStd;
+                font-weight: 700;
+            }
+        }
+    }
+
+    img {
+        fill: var(--primary-orange);
+        position: absolute;
+        right: 111.57px;
+        bottom: 0.42px;
+        height: auto;
+        width: auto;
+    }
+}

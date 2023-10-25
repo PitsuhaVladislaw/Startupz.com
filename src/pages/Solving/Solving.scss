@@ -1,0 +1,37 @@
+@font-face {
+    font-family: CircularStd;
+    src: url(../../assets/font/CircularStd-Book/CircularStd-Book.ttf);
+}
+
+%setBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+
+.solving {
+    @extend %setBlock;
+    padding: 156px 0 140px;
+    gap: 33px;
+
+    h5 {
+        color: var(--primary-orange);
+        text-align: center;
+        font-family: CircularStd;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: -0.4px;
+        height: auto;
+        width: auto;
+        margin: 0;
+    }
+
+    img {
+        width: auto;
+        height: auto;
+    }
+}
