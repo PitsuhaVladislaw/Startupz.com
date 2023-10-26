@@ -19,7 +19,7 @@ export default function BotAssistant() {
 
     return(
         <div className='assistant'>
-            <div style={{display: 'none'}} id='message' className='mes-block'>
+            <div id='message' className='mes-block'>
                 <div className='message'>
                     <p>
                         Hi! I am Ben, your virtual assistant. <br />
