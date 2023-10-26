@@ -8,7 +8,7 @@ export default function Footer() {
     return(
         <footer className='footer-page'>
             <article className='desc-logo'>
-                <img src={Logo} alt="Logo company" />
+                <a href=""><img src={Logo} alt="Logo company" /></a>
                 <h5>© 2020 Startupz.<br />All rights reserved. </h5>
             </article>
             <section>

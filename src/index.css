@@ -2,4 +2,24 @@
     --complementary-green: #46B8C8;
     --primary-orange: #FB8958;
     --secondary-yellow: #FFC351;
+    --additional-light-white: #939393;
+    --additional-light-black: #141416; 
+    --additional-dark-gray: #3D4F5C;
+    --additional-blue: #8BB5C9;
+    --additional-yellow: rgba(187, 169, 142, 0.15);
+    --primary-black: rgb(0, 0, 0);
+    --primary-white: #fff;
+    --primary-light-gray: #FBFAFA;
+    --pages-font-family: Circular Std;
+    --tex-secondary-font-family: Roboto;
+}
+
+@font-face {
+    font-family: Circular Std;
+    src: url(../src/assets/font/CircularStd-Book/CircularStd-Book.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../src/assets/font/Roboto/Roboto-Black.ttf);
 }

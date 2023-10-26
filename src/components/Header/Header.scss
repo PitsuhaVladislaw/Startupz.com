@@ -1,85 +1,90 @@
-@font-face {
-    font-family: CircularStd;
-    src: url(../../assets/font/CircularStd-Book/CircularStd-Book.ttf);
-}
-
 %setText {
-    color: #3D4F5C;
-    font-family: CircularStd;
-    font-size: 85px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 85px;
+    font-family: var(--pages-font-family);
     letter-spacing: -1.7px;
+    font-style: normal;
+    line-height: 85px;
+    color: var(--additional-dark-gray);
+    font-weight: 700;
+    font-size: 85px;
     height: auto;
     width: auto;
     margin: 0;
 }
 
 %setBlock {
-    display: flex;
     justify-content: center;
+    display: flex;
     height: auto;
     width: auto;
 }
 
 .header-page {
-    position: relative;
+    gap: 145px;
     @extend %setBlock;
+    position: relative;
     flex-direction: column;
     padding: 30px 120px 225px;
-    gap: 145px;
 
     .header-nav {
         @extend %setBlock;
+        align-items: none;
         flex-direction: row;
         justify-content: space-between;
-        align-items: none;
 
-        img {
-            position: static;
-            align-self: center;
-            width: auto;
-            height: auto;
-            color: #141416;
-            cursor: pointer;
+        a {
+            img {
+                align-self: center;
+                color: var(--additional-light-black);
+                position: static;
+                cursor: pointer;
+                height: auto;
+                width: auto;
+            }
         }
     }
 
     .header-body {
+        gap: 25px;
         @extend %setBlock;
         flex-direction: column;
-        gap: 25px;
 
         h1 {
             @extend %setText;
         }
 
         p {
-            @extend %setText;
-            color: var(--primary-orange);
             font-size: 24px;
             font-weight: 400;
+            @extend %setText;
             line-height: 30px;
             letter-spacing: -0.24px;
+            color: var(--primary-orange);
         }
 
         button {
-            @extend %setBlock;
-            align-items: center;
+            outline: 1px solid var(--complementary-green);
+            background: var(--complementary-green);
             padding: 13px 20px 14px;
             border-radius: 32.5px;
-            width: 157px;
-            background: var(--complementary-green);
+            align-items: center;
+            @extend %setBlock;
             cursor: pointer;
             border: none;
+            width: 157px;
             
             h5 {
-                @extend %setText;
-                color: #FFF;
+                color: var(--primary-white);
                 font-size: 18px;
+                @extend %setText;
                 line-height: 18px;
                 letter-spacing: -0.18px;
+            }
+        }
+
+        button:hover {
+            background: var(--primary-white);
+            h5 {
+                color: var(--complementary-green);
             }
         }
     }

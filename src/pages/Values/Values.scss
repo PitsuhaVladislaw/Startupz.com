@@ -1,36 +1,31 @@
-@font-face {
-    font-family: CircularStd;
-    src: url(../../assets/font/CircularStd-Book/CircularStd-Book.ttf);
-}
-
 %setText {
-    color: #3D4F5C;
-    font-family: CircularStd;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 50px;
+    font-family: var(--pages-font-family);
+    color: var(--additional-dark-gray);
     letter-spacing: -1px;
+    font-style: normal;
+    line-height: 50px;
+    font-weight: 700;
+    font-size: 50px;
     height: auto;
     width: auto;
     margin: 0;
 }
 
 %setBlock {
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: auto;
-    width: auto;
 }
 
 .values {
+    gap: 117px;
     @extend %setBlock;
     position: relative;
-    background: #FBFAFA;
     flex-direction: column;
     padding: 172px 120px 196px;
-    gap: 117px;
+    background: var(--primary-light-gray);
 
     h1 {
         @extend %setText;
@@ -47,35 +42,35 @@
             gap: 25px;
 
             h3 {
-                @extend %setText;
-                color: var(--primary-orange);
                 font-size: 30px;
+                @extend %setText;
                 line-height: 30px;
-                letter-spacing: -0.3px;
                 margin-bottom: 5px;
+                letter-spacing: -0.3px;
+                color: var(--primary-orange);
             }
 
             .line {
                 width: 50px;
-                border: 1px solid #3D4F5C;
+                border: 1px solid var(--additional-dark-gray);
             }
 
             p {
-                @extend %setText;
-                color: #3D4F5C;
-                font-size: 30px;
-                font-weight: 400;
-                line-height: 38px;
+                color: var(--additional-dark-gray);
                 letter-spacing: -0.3px;
+                line-height: 38px;
+                @extend %setText;
+                font-weight: 400;
+                font-size: 30px;
             }
         }
     }
 
     img {
         position: absolute;
+        right: 153px;
         height: auto;
         width: auto;
-        right: 153px;
         top: 154px;
     }
 }

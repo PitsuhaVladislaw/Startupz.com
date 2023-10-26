@@ -10,28 +10,32 @@ import LikeRight from '../../assets/img/rightlike.png'
 
 export default function OurWorks() {
     return(
-        <section className='ourworks'>
+        <section className='ourworks' id='ourWorks'>
             <h1>Our works</h1>
             <article className='container'>
-                <Cards 
+                <Cards
+                    color="#A9BC87"
                     name="Feedback Labs"
                     desc="Feedback Labs turns feedback into actionable insights for your team."
                     img={Image1}
                     but="More"
                 />
                 <Cards
+                    color="#8BB5C9"
                     name="Feedback Labs"
                     desc="Feedback Labs turns feedback into actionable insights for your team."
                     img={Image2}
                     but="More"
                 />
                 <Cards
+                    color="#00A0B6"
                     name="Feedback Labs"
                     desc="Feedback Labs turns feedback into actionable insights for your team."
                     img={Image3}
                     but="More"
                 />
                 <Cards
+                    color="#8B60D3"
                     name="Feedback Labs"
                     desc="Feedback Labs turns feedback into actionable insights for your team."
                     img={Image4}

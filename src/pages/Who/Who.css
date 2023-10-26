@@ -1,39 +1,35 @@
-@font-face {
-  font-family: CircularStd;
-  src: url(../../assets/font/CircularStd-Book/CircularStd-Book.ttf);
-}
 .who .form-defeni div p, .who .form-defeni div h4, .who .form-desc p, .who .form-desc h1 {
-  color: #3D4F5C;
-  font-family: CircularStd;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 38px;
+  font-family: var(--pages-font-family);
   letter-spacing: -0.3px;
+  font-style: normal;
+  line-height: 38px;
+  color: var(--additional-dark-gray);
+  font-weight: 400;
+  font-size: 30px;
   height: auto;
   width: auto;
   margin: 0;
 }
 
 .who .form-defeni div, .who .form-defeni, .who .form-desc, .who {
-  display: flex;
   justify-content: center;
+  display: flex;
   height: auto;
   width: auto;
 }
 
 .who {
+  gap: 79px;
   position: relative;
+  background: var(--primary-light-gray);
   flex-direction: column;
   align-items: flex-start;
   padding: 147px 120px 157px;
-  background: #FBFAFA;
-  gap: 79px;
 }
 .who .form-desc {
+  gap: 32px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
 }
 .who .form-desc h1 {
   font-size: 50px;
@@ -42,34 +38,34 @@
   letter-spacing: -1px;
 }
 .who .form-desc p {
-  color: var(--primary-orange);
   font-size: 24px;
   line-height: 30px;
   letter-spacing: -0.24px;
+  color: var(--primary-orange);
 }
 .who .form-defeni {
   align-items: flex-start;
   gap: 80px;
 }
 .who .form-defeni div {
-  flex-direction: column;
   align-items: flex-start;
+  flex-direction: column;
   gap: 20px;
 }
 .who .form-defeni div h4 {
   color: var(--primary-orange);
-  font-size: 30px;
-  font-weight: 700;
   line-height: 30px;
+  font-weight: 700;
+  font-size: 30px;
 }
 .who .form-defeni div .line {
   width: 50px;
-  border: 1px solid #3D4F5C;
+  border: 1px solid var(--additional-dark-gray);
 }
 .who img {
   position: absolute;
+  right: 159px;
   height: auto;
   width: auto;
-  right: 159px;
   top: 146px;
 }/*# sourceMappingURL=Who.css.map */

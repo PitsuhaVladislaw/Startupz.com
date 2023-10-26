@@ -1,24 +1,19 @@
-@font-face {
-    font-family: CircularStd;
-    src: url(../../assets/font/CircularStd-Book/CircularStd-Book.ttf);
-}
-
 %setBlock {
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
     height: auto;
     width: auto;
 }
 
 %setText {
-    color: #3D4F5C;
-    font-family: CircularStd;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
+    font-family: var(--pages-font-family);
     letter-spacing: -0.18px;
+    font-style: normal;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--additional-dark-gray);
+    font-size: 18px;
     height: auto;
     width: auto;
     margin: 0;
@@ -33,20 +28,33 @@
         cursor: pointer;
     }
 
+    h3:hover {
+        text-decoration: underline;
+    }
+
     button {
-        padding: 15px 35px 16px 34px;
         border: 1px solid var(--complementary-green);
+        padding: 15px 35px 16px 34px;
         border-radius: 32.5px;
         background: none;
         margin-left: 2px;
         cursor: pointer;
+
         p {
-            @extend %setText;
             color: var(--complementary-green);
+            @extend %setText;
             text-align: center;
             font-weight: 700;
             line-height: 100%;
             margin: 0;
+        }
+    }
+
+    button:hover {
+        background: var(--complementary-green);
+
+        p {
+            color: var(--primary-white);
         }
     }
 }

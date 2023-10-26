@@ -1,22 +1,17 @@
-@font-face {
-    font-family: CircularStd;
-    src: url(../../assets/font/CircularStd-Book/CircularStd-Book.ttf);
-}
-
 %setBlock {
-    display: flex;
     justify-content: center;
+    display: flex;
     height: auto;
     width: auto;
 }
 
 %setText {
-    color: #939393;
     font-family: CircularStd;
-    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
     line-height: 30px;
+    color: var(--additional-light-white);
+    font-weight: 400;
+    font-size: 18px;
     height: auto;
     width: auto;
     margin: 0;
@@ -28,15 +23,17 @@
     padding: 90px 136px 123px 120px;
 
     .desc-logo {
+        gap: 84.56px;
         @extend %setBlock;
         flex-direction: column;
         align-items: flex-start;
-        gap: 84.56px;
 
-        img {
-            width: auto;
-            height: auto;
-            color: #141416;
+        a {
+            img {
+                width: auto;
+                height: auto;
+                color: var(--additional-light-black);
+            }
         }
 
         h5 {
@@ -49,27 +46,27 @@
         align-items: flex-start;
 
         article {
+            gap: 19px;
             @extend %setBlock;
             flex-direction: column;
             align-items: flex-start;
-            gap: 19px;
     
             h3 {
                 @extend %setText;
-                color: #3D4F5C;
+                color: var(--additional-dark-gray);
                 line-height: 18px;
             }
     
             div {
+                gap: 11px;
                 @extend %setBlock;
                 flex-direction: column;
                 align-items: flex-start;
-                gap: 11px;
     
                 p {
-                    @extend %setText;
-                    color: #939393;
                     line-height: 24px;
+                    @extend %setText;
+                    color: var(--additional-light-white);
                     width: 328px;
                 }
     
@@ -77,15 +74,15 @@
                     text-decoration: none;
     
                     h5 {
-                        @extend %setText;
                         color: var(--complementary-green);
                         line-height: 35px;
+                        @extend %setText;
                     }
     
                     .icon-link {
-                        width: 23px;
-                        height: 23px;
                         color: var(--complementary-green);
+                        height: 23px;
+                        width: 23px;
                     }
                 }
             }

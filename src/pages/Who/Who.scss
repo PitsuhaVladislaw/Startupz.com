@@ -1,82 +1,77 @@
-@font-face {
-    font-family: CircularStd;
-    src: url(../../assets/font/CircularStd-Book/CircularStd-Book.ttf);
-}
-
 %setText {
-    color: #3D4F5C;
-    font-family: CircularStd;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 38px;
+    font-family: var(--pages-font-family);
     letter-spacing: -0.3px;
+    font-style: normal;
+    line-height: 38px;
+    color: var(--additional-dark-gray);
+    font-weight: 400;
+    font-size: 30px;
     height: auto;
     width: auto;
     margin: 0;
 }
 
 %setBlock {
-    display: flex;
     justify-content: center;
+    display: flex;
     height: auto;
     width: auto;
 }
 
 .who {
+    gap: 79px;
     @extend %setBlock;
     position: relative;
+    background: var(--primary-light-gray);
     flex-direction: column;
     align-items: flex-start;
     padding: 147px 120px 157px;
-    background: #FBFAFA;
-    gap: 79px;
 
     .form-desc {
+        gap: 32px;
         @extend %setBlock;
         flex-direction: column;
         align-items: flex-start;
-        gap: 32px;
 
         h1 {
-            @extend %setText;
             font-size: 50px;
             font-weight: 700;
+            @extend %setText;
             line-height: 50px;
             letter-spacing: -1px;
         }
 
         p {
-            @extend %setText;
-            color: var(--primary-orange);
             font-size: 24px;
+            @extend %setText;
             line-height: 30px;
             letter-spacing: -0.24px;
+            color: var(--primary-orange);
         }
     }
 
     .form-defeni {
-        @extend %setBlock;
         align-items: flex-start;
+        @extend %setBlock;
         gap: 80px;
         
         div {
-            @extend %setBlock;
-            flex-direction: column;
             align-items: flex-start;
+            flex-direction: column;
+            @extend %setBlock;
             gap: 20px;
 
             h4 {
-                @extend %setText;
                 color: var(--primary-orange);
-                font-size: 30px;
-                font-weight: 700;
                 line-height: 30px;
+                @extend %setText;
+                font-weight: 700;
+                font-size: 30px;
             }
         
             .line {
                 width: 50px;
-                border: 1px solid #3D4F5C;
+                border: 1px solid var(--additional-dark-gray);
             }
         
             p {
@@ -87,9 +82,9 @@
 
     img {
         position: absolute;
+        right: 159px;
         height: auto;
         width: auto;
-        right: 159px;
         top: 146px;
     }
 }

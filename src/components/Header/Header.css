@@ -1,71 +1,74 @@
-@font-face {
-  font-family: CircularStd;
-  src: url(../../assets/font/CircularStd-Book/CircularStd-Book.ttf);
-}
 .header-page .header-body button h5, .header-page .header-body p, .header-page .header-body h1 {
-  color: #3D4F5C;
-  font-family: CircularStd;
-  font-size: 85px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 85px;
+  font-family: var(--pages-font-family);
   letter-spacing: -1.7px;
+  font-style: normal;
+  line-height: 85px;
+  color: var(--additional-dark-gray);
+  font-weight: 700;
+  font-size: 85px;
   height: auto;
   width: auto;
   margin: 0;
 }
 
 .header-page .header-body button, .header-page .header-body, .header-page .header-nav, .header-page {
-  display: flex;
   justify-content: center;
+  display: flex;
   height: auto;
   width: auto;
 }
 
 .header-page {
+  gap: 145px;
   position: relative;
   flex-direction: column;
   padding: 30px 120px 225px;
-  gap: 145px;
 }
 .header-page .header-nav {
+  align-items: none;
   flex-direction: row;
   justify-content: space-between;
-  align-items: none;
 }
-.header-page .header-nav img {
-  position: static;
+.header-page .header-nav a img {
   align-self: center;
-  width: auto;
-  height: auto;
-  color: #141416;
+  color: var(--additional-light-black);
+  position: static;
   cursor: pointer;
+  height: auto;
+  width: auto;
 }
 .header-page .header-body {
-  flex-direction: column;
   gap: 25px;
+  flex-direction: column;
 }
 .header-page .header-body p {
-  color: var(--primary-orange);
   font-size: 24px;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: -0.24px;
+  color: var(--primary-orange);
 }
 .header-page .header-body button {
-  align-items: center;
+  outline: 1px solid var(--complementary-green);
+  background: var(--complementary-green);
   padding: 13px 20px 14px;
   border-radius: 32.5px;
-  width: 157px;
-  background: var(--complementary-green);
+  align-items: center;
   cursor: pointer;
   border: none;
+  width: 157px;
 }
 .header-page .header-body button h5 {
-  color: #FFF;
+  color: var(--primary-white);
   font-size: 18px;
   line-height: 18px;
   letter-spacing: -0.18px;
+}
+.header-page .header-body button:hover {
+  background: var(--primary-white);
+}
+.header-page .header-body button:hover h5 {
+  color: var(--complementary-green);
 }
 .header-page img {
   position: absolute;

@@ -1,17 +1,12 @@
-@font-face {
-    font-family: CircularStd;
-    src: url(../../assets/font/CircularStd-Book/CircularStd-Book.ttf);
-}
-
 %setText {
-    color: #3D4F5C;
-    font-family: CircularStd;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
+    font-family: var(--pages-font-family);
     letter-spacing: -0.16px;
+    text-align: center;
+    font-style: normal;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--additional-dark-gray);
     height: auto;
     width: auto;
     margin: 0;
@@ -32,10 +27,10 @@
     gap: 55px;
 
     h1 {
-        @extend %setText;
-        color: #3D4F5C;
         font-size: 50px;
         font-weight: 700;
+        @extend %setText;
+        color: var(--additional-dark-gray);
         line-height: 50px;
         letter-spacing: -0.5px;
     }
@@ -49,30 +44,30 @@
         grid-gap: 25px;
         
         .card {
+            box-shadow: 0px 8px 35px 0px rgba(187, 169, 142, 0.15);
             padding: 45px 71px 50px 69px;
             border-radius: 30px;
-            background: #FFF;
-            box-shadow: 0px 8px 35px 0px rgba(187, 169, 142, 0.15);
+            background: var(--primary-white);
             
             .card-body {
-                @extend %setBlock;
                 flex-direction: column;
+                @extend %setBlock;
                 padding: 0;
                 gap: 6px;
         
                 .h5 {
-                    @extend %setText;
-                    color: #8BB5C9;
                     font-size: 32px;
                     font-weight: 700;
+                    @extend %setText;
+                    color: var(--additional-blue);
                     line-height: 30px;
                     letter-spacing: -0.32px;
                 }
         
                 p {
                     @extend %setText;
-                    width: 387px;
                     margin-top: 19px;
+                    width: 387px;
                 }
 
                 img {
@@ -81,17 +76,22 @@
                 }
 
                 button {
-                    margin-top: 13px;
-                    @extend %setBlock;
-                    @extend %setText;
-                    border-radius: 32.5px;
-                    padding: 14px 30.51px 13px 31.49px;
-                    background: none;
                     border: 1px solid var(--complementary-green);
+                    padding: 14px 30.51px 13px 31.49px;
                     color: var(--complementary-green);
-                    font-size: 18px;
-                    font-weight: 700;
+                    border-radius: 32.5px;
                     line-height: 18px;
+                    @extend %setBlock;
+                    margin-top: 13px;
+                    @extend %setText;
+                    background: none;
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+
+                button:hover {
+                    background: var(--complementary-green);
+                    color: var(--primary-white);
                 }
             }
         }
@@ -103,18 +103,18 @@
         gap: 33px;
 
         p {
-            @extend %setText;
             color: var(--primary-orange);
-            font-size: 40px;
-            font-weight: 700;
-            line-height: 45px;
             letter-spacing: -0.4px;
+            @extend %setText;
+            line-height: 45px;
+            font-weight: 700;
+            font-size: 40px;
             width: 882px;
         }
 
         img {
-            width: auto;
             height: auto;
+            width: auto;
         }
     }
 }

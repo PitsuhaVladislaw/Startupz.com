@@ -4,15 +4,47 @@
   right: 126px;
   display: flex;
   justify-content: flex-end;
+  flex-direction: column;
+  gap: 6.44px;
   align-items: flex-end;
   z-index: 100;
+}
+.assistant .mes-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: auto;
+  width: auto;
+  gap: 69px;
+}
+.assistant .mes-block .message {
+  border-radius: 100px 100px 0 100px;
+  padding: 14.08px 18px 13.56px;
+  background: #46B8C8;
+  box-shadow: 0px 4px 4px rgba(29, 75, 82, 0.25);
+}
+.assistant .mes-block .message p {
+  color: var(--primary-white);
+  font-family: var(--tex-secondary-font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  height: auto;
+  width: auto;
+  margin: 0;
+}
+.assistant .mes-block button {
+  margin-top: 11px;
+  width: 11px;
+  color: "#939393";
 }
 .assistant .bot {
   height: auto;
   width: auto;
   border-radius: 112.813px;
-  border: 9px solid #FFF;
-  background: #FFF;
+  border: 9px solid var(--primary-white);
+  background: var(--primary-white);
   cursor: pointer;
 }
 .assistant .bot .bot-body {
@@ -36,5 +68,5 @@
   left: 0;
 }
 .assistant .bot:hover {
-  border-color: #3D4F5C;
+  border-color: var(--additional-blue);
 }/*# sourceMappingURL=BotAssistant.css.map */

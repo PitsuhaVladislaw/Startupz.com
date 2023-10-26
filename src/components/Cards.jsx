@@ -2,10 +2,15 @@ import { Card, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Cards = (props) => {
+
+    const cardStyle = {
+        color: props.color
+    }
+
     return(
         <Card>
             <Card.Body>
-                <Card.Title>{props.name}</Card.Title>
+                <Card.Title style={cardStyle}>{props.name}</Card.Title>
                 <Card.Text>
                     {props.desc}
                 </Card.Text>
