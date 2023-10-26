@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/startupz_task/static/css/main.0ebdf8b4.css",
-    "main.js": "/startupz_task/static/js/main.6e6c8399.js",
+    "main.js": "/startupz_task/static/js/main.93ef2c95.js",
     "static/media/Untitled_Artwork 7 1.png": "/startupz_task/static/media/Untitled_Artwork 7 1.8a59d62f9be436a75928.png",
     "static/media/Roboto-Black.ttf": "/startupz_task/static/media/Roboto-Black.cf56c1b149d0a5e8d7c6.ttf",
     "static/media/CircularStd-Book.ttf": "/startupz_task/static/media/CircularStd-Book.8dd9b00439575cc09ae4.ttf",
@@ -14,10 +14,10 @@
     "static/media/Subtract.png": "/startupz_task/static/media/Subtract.52d52474beeb884883e9.png",
     "index.html": "/startupz_task/index.html",
     "main.0ebdf8b4.css.map": "/startupz_task/static/css/main.0ebdf8b4.css.map",
-    "main.6e6c8399.js.map": "/startupz_task/static/js/main.6e6c8399.js.map"
+    "main.93ef2c95.js.map": "/startupz_task/static/js/main.93ef2c95.js.map"
   },
   "entrypoints": [
     "static/css/main.0ebdf8b4.css",
-    "static/js/main.6e6c8399.js"
+    "static/js/main.93ef2c95.js"
   ]
 }
