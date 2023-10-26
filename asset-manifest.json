@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/startupz_task/static/css/main.0ebdf8b4.css",
+    "main.js": "/startupz_task/static/js/main.f80a9707.js",
+    "static/media/Untitled_Artwork 7 1.png": "/startupz_task/static/media/Untitled_Artwork 7 1.8a59d62f9be436a75928.png",
+    "static/media/Roboto-Black.ttf": "/startupz_task/static/media/Roboto-Black.cf56c1b149d0a5e8d7c6.ttf",
+    "static/media/CircularStd-Book.ttf": "/startupz_task/static/media/CircularStd-Book.8dd9b00439575cc09ae4.ttf",
+    "static/media/tech 3.png": "/startupz_task/static/media/tech 3.8d63271a3f9f1d17f5cd.png",
+    "static/media/tech 2.png": "/startupz_task/static/media/tech 2.640cdf73069beebd232c.png",
+    "static/media/tech 1.png": "/startupz_task/static/media/tech 1.90a604290a1223ff862a.png",
+    "static/media/Untitled_Artwork 6.png": "/startupz_task/static/media/Untitled_Artwork 6.1e289047d0ae88bdc8cf.png",
+    "static/media/tech 4.png": "/startupz_task/static/media/tech 4.d28306549e145531eb05.png",
+    "static/media/Untitled_Artwork 5.png": "/startupz_task/static/media/Untitled_Artwork 5.e22b25f4142e0c58f55f.png",
+    "static/media/Subtract.png": "/startupz_task/static/media/Subtract.52d52474beeb884883e9.png",
+    "index.html": "/startupz_task/index.html",
+    "main.0ebdf8b4.css.map": "/startupz_task/static/css/main.0ebdf8b4.css.map",
+    "main.f80a9707.js.map": "/startupz_task/static/js/main.f80a9707.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ebdf8b4.css",
+    "static/js/main.f80a9707.js"
+  ]
+}
