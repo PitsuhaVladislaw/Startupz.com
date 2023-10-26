@@ -4,31 +4,38 @@ import Bot from '../../assets/icon/assistant.png'
 import Block1 from '../../assets/img/Rectangle 52.png'
 import Block2 from '../../assets/img/Rectangle 51.png'
 
+import React, { useState, useEffect } from "react";
 import { CloseButton } from 'react-bootstrap'
 
 export default function BotAssistant() {
-    const message = document.getElementById('message')
+    const [isBlockVisible, setBlockVisible] = useState(false);
 
-    function showBlock() {
-        message.style.display = 'flex';
-    }
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setBlockVisible(true);
+        }, 7000);
 
-    function closeBlock() {
-        message.style.display = 'none';
-    }
+        return () => clearTimeout(timer);
+    }, []);
+
+    const handleCrossClick = () => {
+        setBlockVisible(false);
+    };
 
     return(
         <div className='assistant'>
-            <div id='message' className='mes-block'>
-                <div className='message'>
-                    <p>
-                        Hi! I am Ben, your virtual assistant. <br />
-                        How can I make your day better?
-                    </p>
+            {isBlockVisible && (
+                <div id='message' className='mes-block'>
+                    <div className='message'>
+                        <p>
+                            Hi! I am Ben, your virtual assistant. <br />
+                            How can I make your day better?
+                        </p>
+                    </div>
+                    <CloseButton onClick={handleCrossClick} />
                 </div>
-                <CloseButton onClick={closeBlock} />
-            </div>
-            <div className='bot' onMouseEnter={showBlock}>
+            )}
+            <div className='bot'>
                 <div className='bot-body'>
                     <div className='bot-icon'>
                         <img src={Bot} alt="assistant" />
