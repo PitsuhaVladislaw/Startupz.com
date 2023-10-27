@@ -20,11 +20,12 @@
 .footer-page {
     @extend %setBlock;
     justify-content: space-between;
-    padding: 90px 136px 123px 120px;
+    padding: 90px 76px 73px 120px;
 
     .desc-logo {
         gap: 84.56px;
         @extend %setBlock;
+        justify-content: flex-start;
         flex-direction: column;
         align-items: flex-start;
 
@@ -67,7 +68,7 @@
                     line-height: 24px;
                     @extend %setText;
                     color: var(--additional-light-white);
-                    width: 328px;
+                    width: auto;
                 }
     
                 a {

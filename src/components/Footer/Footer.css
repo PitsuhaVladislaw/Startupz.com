@@ -19,10 +19,11 @@
 
 .footer-page {
   justify-content: space-between;
-  padding: 90px 136px 123px 120px;
+  padding: 90px 76px 73px 120px;
 }
 .footer-page .desc-logo {
   gap: 84.56px;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -51,7 +52,7 @@
 .footer-page section article div p {
   line-height: 24px;
   color: var(--additional-light-white);
-  width: 328px;
+  width: auto;
 }
 .footer-page section article div a {
   text-decoration: none;
